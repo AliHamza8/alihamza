@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap');
+
+:root {
+    --main-color: black;
+    --primary-color: rgb(6, 6, 173);
+    --font-color: white;
+    --radius-curve: 0.3rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    position: relative;
+    background: linear-gradient(to left, rgb(75, 75, 217), rgb(229, 200, 208));
+    height: 100vh;
+}
+
+header {
+    max-width: 90%;
+    margin: 0 auto;
+    padding-top: 1rem;
+}
+
+.logo {
+    font-size: 1.3rem;
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hamburger {
+    display: none;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+.navbar-nav {
+    display: flex;
+}
+
+.nav-item {
+    list-style: none;
+    margin-left: 0.5rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--main-color);
+    padding: 0.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.link-style {
+    background-color: var(--main-color);
+    color: var(--font-color);
+    border-radius: var(--radius-curve);
+}
+
+.hero-section {
+    max-width: 95%;
+    margin: 5rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.dotted-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 13rem;
+}
+
+.about-section {
+    max-width: 50%;
+    font-size: 1.4rem;
+}
+
+.web-dev-head {
+    display: flex;
+    align-items: center;
+    margin-bottom: -2rem;
+}
+
+.head-web {
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: rgb(9, 49, 210);
+}
+
+.display-image {
+    max-width: 20rem;
+}
+
+.my-image {
+    width: 70%;
+    border-radius: var(--radius-curve);
+    border-radius: 10%;
+}
+
+.personal-image {
+    display: none;
+}
+
+.btn-social {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-curve);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 0;
+}
+
+.btn-social a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+.btn-github {
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+
+.btn-github:hover {
+    background-color: transparent;
+    color: var(--main-color);
+}
+
+.btn-github:hover a {
+    color: var(--main-color);
+}
+
+.btn-linkedin {
+    color: var(--font-color);
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.btn-linkedin:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+.btn-linkedin:hover a {
+    color: var(--primary-color);
+}
+
+/* Skills section */
+.section-skills {
+    max-width: 90%;
+    margin: 1rem auto;
+}
+
+.heading {
+    margin: 2rem auto;
+    text-align: center;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.skills-heading {
+    width: 12rem;
+}
+
+.skills {
+    margin: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.skills-efficiency {
+    max-width: 50%;
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.skill {
+    padding: 1.3rem;
+    width: 20rem;
+    color: var(--font-color);
+    text-align: center;
+    border-radius: var(--radius-curve);
+}
+
+.skill i {
+    font-size: 2rem;
+}
+
+ .skill-html {
+    background-color: rgb(173, 95, 6);
+}
+.skill-css {
+    background-color: rgb(16, 89, 215);
+}
+.skill-bootstrap {
+    background-color: rgb(59, 6, 173);
+}
+.skill-javascript {
+    background-color: rgb(173, 173, 4);
+}
+.skill-git {
+    background-color: black;
+}
+
+/* Projects Section */
+.section-projects {
+    max-width: 90%;
+    margin: 2rem auto;
+}
+
+.project-description {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.projects {
+    margin-top: 2rem;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.project {
+    position: relative;
+    padding: 1rem;
+    color: var(--main-color);
+    background-color: var(--font-color);
+    max-width: 20rem;
+    text-align: center;
+    border-radius: var(--radius-curve);
+    box-shadow: 2px 1px 3px 2px grey;
+    cursor: pointer;
+    margin: 0 auto;
+    background-color: rgba(229, 200, 208, 0.8);
+}
+
+.project-heading {
+    width: 10rem;
+}
+
+.project-image {
+    margin-top: 1.2rem;
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(75, 75, 217, 0.8), rgba(229, 200, 208, 0.8));
+    border-radius: var(--radius-curve);
+    display: none;
+    transition: all 0.3 ease-in-out;
+}
+
+.overlay a {
+    position: relative;
+    text-decoration: none;
+    color: var(--main-color);
+    top: 8rem;
+    font-size: 2rem;
+    margin-left: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.overlay a:hover {
+    color: rgb(238, 7, 7);
+}
+
+.project:hover .overlay {
+    display: block;
+}
+
+/* Section About Me */
+.section-about-me {
+    /* position: relative; */
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 2rem;
+    color: var(--main-color);
+    border-radius: var(--radius-curve);
+    background-color: var(--font-color);
+    color: var(--main-color);
+    box-shadow: 2px 1px 3px 2px grey;
+}
+
+.description-about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-me-description {
+    max-width: 50%;
+}
+.section-about-me img {
+    max-width: 50%;
+}
+
+.btn-resume {
+    /* position: absolute; */
+    bottom:3rem;
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    bottom: 1rem;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-resume:hover {
+    border: 1px solid var(--primary-color);
+    background-color: var(--font-color);
+}
+
+.btn-resume:hover a {
+    color: var(--primary-color);
+}
+
+footer {
+    position: relative;
+    margin-top: 3rem;
+    background: linear-gradient(to left, rgb(75, 75, 217), rgb(229, 200, 208));
+}
+
+.footer-container {
+    margin: 0 auto;
+    width: 80%;
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer-container h1 {
+    text-align: center;
+}
+
+.footer-container p {
+    text-align: center;
+}
+
+.social {
+    margin: 1rem 0;
+}
+
+.social a {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+
+.git-social {
+    color: var(--main-color);
+}
+
+.linkedin-social {
+    color: var(--primary-color);
+}
+
+.footer-line {
+    margin: 0 auto;
+    width: 80%;
+    height: 1px;
+    background-color: var(--main-color);
+}
+
+.copyrights {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+
+/* Resposnive */
+@media (max-width: 890px) {
+    .hero-section {
+        max-width: 100%;
+        margin: 5rem;
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .about-section {
+        max-width: 100%;
+        font-size: 1.2rem;
+    }
+
+    .display-image {
+        width: 40%;
+    }
+
+    .head-web {
+        margin: 0 auto
+    }
+
+    .section-about-me {
+        max-width: 100%;
+    }
+
+    .description-about     {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .my-description {
+        margin-top: 0.5rem;
+        width: 100%;
+        text-align: center;
+    }
+  
+}
+
+@media (max-width: 818px) {
+    header {
+        width: 100%;
+    }
+    nav  {
+        position: relative;
+    }
+
+    .hamburger {
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        display: block;
+        padding: 5px;
+        cursor: pointer;
+    }
+
+    .bar {
+        width: 1.5rem;
+        margin-top: 0.2rem;
+        height: 2px;
+        background-color: var(--main-color);
+    }
+
+    .navbar-nav {
+        display: none;
+    }
+
+    .hidden {
+        opacity: 0;
+    }
+
+    .mobile-nav {
+        position: fixed;
+        top: 2.5rem;
+        right: -1rem;
+        display: block;
+        background-color: rgba(229, 200, 208, 0.9);
+        width: 10rem;
+        border-radius: var(--radius-curve);
+        z-index: 1;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .nav-item-mob {
+        list-style: none;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .nav-link-mob {
+        text-decoration: none;
+        color: var(--main-color);
+    }
+
+    .nav-link-mob:hover {
+        color: var(--primary-color);
+    }
+
+    .display-image {
+        width: 40%;
+    }
+
+    .projects {
+        flex-direction: column;
+    }
+
+    .project {
+        max-width: 50rem;
+    }
+}
+
+@media (max-width: 668px) {
+    .hero-section {
+        margin-top: 8rem;
+    }
+    .display-image {
+       display: none;
+    }
+
+    .personal-image {
+        margin: 0 auto;
+        display: block;
+        width: 40%;
+        border-radius: 10%;
+    }
+}
